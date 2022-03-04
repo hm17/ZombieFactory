@@ -17,5 +17,18 @@ contract ZombieHelper is ZombieFeeding {
         require(msg.sender == zombieToOwner[_zombieId]);
         zombies[_zombieId].dna = _newDna;
     }
+
+    function getZombiesByOwner(address _owner) external view returns(uint[] memory) {
+        // cheaper to build array each time than to store on blockchain
+        uint[] memory result = new uint[](ownerZombieCount[_owner]);
+        uint counter = 0;
+        for(uint i=0; i < zombies.length; i++) {
+            if(zombieToOwner[i] == _owner) {
+                result[counter] = i;
+                counter++;
+            }
+        }
+        return result;
+    }
 }
 
