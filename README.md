@@ -1,4 +1,8 @@
-NFT game on Ethereum blockchain
+NFT game on Ethereum blockchain.
+
+// Details
+DApp built with solidity smart contracts.
+Front End App built with Javascript and Web3.js
 
 
 // Usage
