@@ -46,4 +46,9 @@ contract ZombieFactory is Ownable {
         uint randDna = _generateRandomDna(_name);
         _createZombie(_name, randDna);
     }
+
+    // Only way to destroy contract on blockchain
+    function kill() public onlyOwner {
+        selfdestruct(owner());
+    }
 }
