@@ -1,15 +1,15 @@
-NFT game on Ethereum blockchain.
+<h1>NFT game on Ethereum blockchain.</h1>
 
-// Details
+<h2>Details</h2>
 - DApp built with solidity smart contracts.
 - Front End App built with Javascript and Web3.js
 
 
-// Usage
+<h2>Usage</h2>
 1. Deploy ZombieFeeding.sol contract to Ethereum blockchain
 
 
-// Test
+<h2>Test</h2>
 1. Run truffle compile command.
 ```
 truffle compile
