@@ -24,3 +24,18 @@ truffle test
 </code>
   </li>
   </ol>
+
+<h2>Deploy</h2>
+<ol>
+<li>Deploy to Rinkeyby test network<br>
+<code>
+truffle migrate --network rinkeby
+
+  </code>
+  </li><br>
+<li>Deploy to mainnet<br>
+<code>
+truffle migrate --network mainnet
+</code>
+  </li>
+  </ol>
